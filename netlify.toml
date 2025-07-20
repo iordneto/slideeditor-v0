@@ -1,0 +1,30 @@
+[build]
+  # Build command
+  command = "yarn build"
+  
+  # Directory where the build output is located
+  publish = "out"
+  
+  # Node version and environment variables
+  [build.environment]
+    NODE_VERSION = "18"
+    NPM_FLAGS = "--prefer-offline --no-audit"
+    # Set build image with more system libraries
+    BUILD_IMAGE = "focal"
+
+# Use the official Next.js plugin for Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Install dependencies before build
+[[build.processing.css]]
+  bundle = true
+
+[[build.processing.js]]
+  bundle = true
+
+# SPA redirects for Next.js
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 

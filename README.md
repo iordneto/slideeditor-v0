@@ -1,4 +1,4 @@
-# Next.js Slide Editor App
+# Slide Editor v0
 
 ## Demo
 

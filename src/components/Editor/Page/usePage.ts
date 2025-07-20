@@ -109,7 +109,7 @@ const usePage = () => {
   const handleAddText = (pageUuid: string) => {
     const newTextItem = {
       id: Date.now().toString(),
-      text: "Novo Texto",
+      text: "New Text",
       x: 50,
       y: 50,
     };

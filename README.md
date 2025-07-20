@@ -1,39 +1,39 @@
 # Next.js Slide Editor App
 
-## Demonstração
+## Demo
 
-Veja abaixo uma demonstração do aplicativo em ação:
+See below a demonstration of the application in action:
 
-![Demonstração do App](./public/assets/demo1.gif)
-![Demonstração do App](./public/assets/demo2.gif)
-![Demonstração do App](./public/assets/demo3.gif)
+![App Demo](./public/assets/demo1.gif)
+![App Demo](./public/assets/demo2.gif)
+![App Demo](./public/assets/demo3.gif)
 
-## Sobre o Projeto
+## About the Project
 
-Este projeto é um aplicativo baseado no famoso Canva, mas com funcionalidades personalizadas para facilitar a criação e edição de slides. Com ele, você pode:
+This project is an application based on the famous Canva, but with custom functionalities to facilitate slide creation and editing. With it, you can:
 
-- Fazer upload de múltiplas imagens.
-- Adicionar imagens ao editor de slides.
-- Redimensionar e rotacionar imagens.
-- Adicionar textos.
-- Criar múltiplas páginas.
+- Upload multiple images.
+- Add images to the slide editor.
+- Resize and rotate images.
+- Add texts.
+- Create multiple pages.
 
-### Funcionalidades Principais
+### Main Features
 
-- **Upload de Images:** Para adicionar imagens ao projeto basta arrastar sobre qualquer área do app ou clicar no botão de upload
-- **Arraste e Solte:** Para adicionar imagens a um slide, basta arrastá-las para o editor.
-- **Criação de Textos:** Clique no ícone acima da página para adicionar textos.
-- **Interface Intuitiva:** O layout é simples e fácil de usar, garantindo uma ótima experiência para criação de conteúdo visual.
+- **Image Upload:** To add images to the project, just drag them over any area of the app or click the upload button
+- **Drag and Drop:** To add images to a slide, just drag them to the editor.
+- **Text Creation:** Click the icon above the page to add texts.
+- **Intuitive Interface:** The layout is simple and easy to use, ensuring a great experience for visual content creation.
 
-## Requisitos de Instalação
+## Installation Requirements
 
-### Dependências do Sistema
+### System Dependencies
 
-Antes de começar, certifique-se de que seu sistema tem as bibliotecas necessárias para rodar o projeto.
+Before starting, make sure your system has the necessary libraries to run the project.
 
 #### macOS
 
-No macOS, rode o seguinte comando no terminal para instalar as dependências:
+On macOS, run the following command in the terminal to install dependencies:
 
 ```bash
 brew install pkg-config cairo pango libpng jpeg giflib librsvg
@@ -41,7 +41,7 @@ brew install pkg-config cairo pango libpng jpeg giflib librsvg
 
 #### Linux
 
-No Linux, utilize o gerenciador de pacotes da sua distribuição. Para distribuições baseadas em Debian/Ubuntu, por exemplo:
+On Linux, use your distribution's package manager. For Debian/Ubuntu-based distributions, for example:
 
 ```bash
 sudo apt-get install pkg-config libcairo2-dev libpango1.0-dev libpng-dev libjpeg-dev libgif-dev librsvg2-dev
@@ -49,72 +49,72 @@ sudo apt-get install pkg-config libcairo2-dev libpango1.0-dev libpng-dev libjpeg
 
 #### Windows
 
-No Windows, você pode instalar as bibliotecas via MSYS2:
+On Windows, you can install the libraries via MSYS2:
 
-1. Instale o [MSYS2](https://www.msys2.org/).
-2. Abra o terminal do MSYS2 e rode:
+1. Install [MSYS2](https://www.msys2.org/).
+2. Open the MSYS2 terminal and run:
 
 ```bash
 pacman -S mingw-w64-x86_64-pkg-config mingw-w64-x86_64-cairo mingw-w64-x86_64-pango mingw-w64-x86_64-libpng mingw-w64-x86_64-librsvg
 ```
 
-### Configuração do Projeto
+### Project Setup
 
-Depois de instalar as dependências do sistema, siga os passos abaixo para configurar o projeto:
+After installing the system dependencies, follow the steps below to set up the project:
 
-1. Clone o repositório:
+1. Clone the repository:
 
    ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd <PASTA_DO_PROJETO>
+   git clone <REPOSITORY_URL>
+   cd <PROJECT_FOLDER>
    ```
 
-2. Instale as dependências do projeto:
+2. Install project dependencies:
 
    ```bash
    npm install
    ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-4. Abra o navegador em [http://localhost:3000](http://localhost:3000) para acessar o app.
+4. Open your browser at [http://localhost:3000](http://localhost:3000) to access the app.
 
-## Como Usar
+## How to Use
 
-1. **Adicionando Imagens:**
+1. **Adding Images:**
 
-   - Faça o upload das imagens para a biblioteca.
-   - Arraste as imagens desejadas para o editor de slides.
+   - Upload images to the library.
+   - Drag the desired images to the slide editor.
 
-2. **Editando Imagens:**
+2. **Editing Images:**
 
-   - Redimensione ou rotacione as imagens diretamente no editor.
+   - Resize or rotate images directly in the editor.
 
-3. **Adicionando Textos:**
+3. **Adding Texts:**
 
-   - Clique no ícone de texto localizado acima da página para adicionar novos textos.
+   - Click the text icon located above the page to add new texts.
 
-4. **Criando Múltiplas Páginas:**
-   - Navegue entre as páginas e use as ferramentas disponíveis para criar slides adicionais.
+4. **Creating Multiple Pages:**
+   - Navigate between pages and use the available tools to create additional slides.
 
-# Futuras Possíveis Melhorias
+# Future Possible Improvements
 
-Estamos continuamente trabalhando para melhorar o aplicativo. Algumas melhorias e novos recursos que estão planejados para futuras versões incluem:
+We are continuously working to improve the application. Some improvements and new features that are planned for future versions include:
 
-- **Clique na Imagem para Editar**: Permitir que os usuários cliquem diretamente nas imagens para acessar as opções de edição, facilitando a navegação e edição no slide.
+- **Click on Image to Edit**: Allow users to click directly on images to access editing options, facilitating navigation and editing in the slide.
 
-- **Implementação de Corte (Crop) em Imagens**: Adicionar uma ferramenta de corte para que os usuários possam ajustar e cortar as imagens antes de usá-las nos slides.
+- **Image Crop Implementation**: Add a crop tool so users can adjust and crop images before using them in slides.
 
-- **Lista Infinita com Virtualização**: Implementar uma lista infinita com virtualização para garantir o desempenho otimizado ao trabalhar com grandes quantidades de imagens ou slides.
+- **Infinite List with Virtualization**: Implement an infinite list with virtualization to ensure optimized performance when working with large amounts of images or slides.
 
-- **Transições e Animações nas Páginas**: Adicionar transições e animações ao criar ou alternar entre páginas para melhorar a experiência visual e interatividade.
+- **Page Transitions and Animations**: Add transitions and animations when creating or switching between pages to improve visual experience and interactivity.
 
-- **Deleção de Imagens e Textos**: Permitir que os usuários possam excluir imagens ou textos diretamente do slide, oferecendo mais flexibilidade e controle durante o processo de criação.
+- **Image and Text Deletion**: Allow users to delete images or texts directly from the slide, offering more flexibility and control during the creation process.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).

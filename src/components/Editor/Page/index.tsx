@@ -41,8 +41,7 @@ const Page = ({ pageUuid }: Props) => {
           <IoTrash color="#333333" size={20} />
         </button>
         <button onClick={() => handleAddText(pageUuid)}>
-          <IoText color="#333333" size={20} />{" "}
-          {/* Botão para adicionar texto */}
+          <IoText color="#333333" size={20} /> {/* Button to add text */}
         </button>
       </div>
       <div className="bg-white" style={{ width, height }} onDrop={handleDrop}>

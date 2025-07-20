@@ -16,7 +16,7 @@ const imageSlice = createSlice({
   name: "image",
   initialState,
   reducers: {
-    // Ação para adicionar a imagem com metadados
+    // Action to add image with metadata
     addImage: (
       state,
       action: PayloadAction<{ id: number; fileName: string }>

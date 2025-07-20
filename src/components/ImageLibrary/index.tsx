@@ -22,7 +22,7 @@ const ImageLibrary = () => {
     if (file) {
       onImageUpload(file);
     }
-    e.target.value = ""; // Reseta o input para permitir o upload do mesmo arquivo novamente.
+    e.target.value = ""; // Reset input to allow uploading the same file again.
   };
 
   return (
